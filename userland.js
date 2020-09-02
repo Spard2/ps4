@@ -199,9 +199,9 @@ var stage2_ = function () {
 	}
 
 	p.syscall = function (sysc, rdi, rsi, rdx, rcx, r8, r9) {
-		//if (typeof sysc == "string") {
+		if (typeof sysc == "string") {
 			sysc = window.syscallnames[sysc];
-		//}
+		}
 		
 		/*if (typeof sysc != "number") {
 			throw new Error("invalid syscall");
