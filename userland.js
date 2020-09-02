@@ -208,9 +208,9 @@ var stage2_ = function () {
 		}*/
 
 		var off = window.syscalls[sysc];
-		if (off == undefined) {
-			throw new Error("invalid syscall");
-		}
+		//if (off == undefined) {
+		//	throw new Error("invalid syscall");
+		//}
 
 		return p.fcall(off, rdi, rsi, rdx, rcx, r8, r9);
 	}
